@@ -1,0 +1,333 @@
+@charset 'utf-8';
+
+/***************************************************************** s::20200407 main_visual **************************************************************/
+/********************************************************************************************************************************************************/
+/* common */
+span.blind {position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0);}
+.summer20_mv_wrap {position: relative; width: 100%; height: 646px; background: #f4e7c7 no-repeat center center; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bev_bg.jpg'); background-size: cover;}
+.summer20_mv_wrap .main_summer20_inner {position: relative; max-width: 1198px; width: 100%; height: 646px; margin: 0 auto;}
+.summer20_mv_wrap .main_summer20_inner .summer20_slogan, 
+.summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan, 
+.summer20_mv_wrap .main_summer20_inner .summer20_set {position:absolute; opacity: 0; transition-duration: width .5s; -webkit-transition-duration: width .5s;}
+
+/* slogan */
+.summer20_mv_wrap .main_summer20_inner .summer20_slogan {position: absolute; top: 12.1%; left: 1.4%; width: 373px; height: 189px; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_emblem.png'); background-repeat: no-repeat; background-size: 100%;}
+.summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan {position: absolute; top: 41.9%; left: 1.6%; width: 125px; height: 38px; border: 2px solid #3a62ad; border-radius: 3px; box-sizing: border-box; z-index:5;}/*20200409 ìˆ˜ì •*/
+.summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan a {display: block; width: 100%; height: 100%; font-size: 15px; color: #3a62ad; line-height: 34px; text-align: center; transition: background-color .7s, color .7s; -webkit-transition: background-color .7s, color .7s;}
+.summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan a:hover {color: #fff; background: #3a62ad;}
+
+/* set ê³µí†µ */
+.summer20_mv_wrap .main_summer20_inner .summer20_set {background-size: 100%; background-repeat: no-repeat; background-size: 100%;}
+.summer20_mv_wrap .main_summer20_inner .summer20_set a {display: block; position: absolute; top: 0; width: 100%; height: 100%;}
+
+/* set 01 */
+.summer20_mv_wrap .main_summer20_inner .summer20_set.set_01 {top: 48.8%; left: 63.4%; width: 352px; height: 271px; background-image: url('/img/20_summer_bev1_cup.png'); z-index:2;}
+.summer20_mv_wrap .main_summer20_inner .summer20_set.set_01 a {left: 1.2%; width: 160px; height: 100%;}
+
+/* set 02 */
+.summer20_mv_wrap .main_summer20_inner .summer20_set.set_02 {top: 27%; left: 16%; width: 555px; height: 373px; background-image: url('/img/20_summer_bev2_cup.png');}/*20200409 ìˆ˜ì •*/
+.summer20_mv_wrap .main_summer20_inner .summer20_set.set_02 a {left: 40%; width: 176px; height: 100%;}
+
+/* set 03 */
+.summer20_mv_wrap .main_summer20_inner .summer20_set.set_03 {top: 11.8%; left: 50.6%; width: 382px; height:313px; background-image: url('/img/20_summer_bev3_cup.png'); z-index:1;}
+.summer20_mv_wrap .main_summer20_inner .summer20_set.set_03 a {top: 0; left: 13%; width: 169px; height: 100%;}
+
+@media screen and (max-width: 1120px) and (min-width: 641px) {
+	/* set 01~03 */
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_02 {left:7%;}
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_01,
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_03 {margin-left:-2%;}
+}
+
+@media screen and (max-width: 1120px) {
+	/* slogan */
+	.summer20_mv_wrap .main_summer20_inner .summer20_slogan {width:300px;}
+	.summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan {top:36.9%;}
+}
+@media screen and (max-width: 940px) {
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_01 {width:302px;}
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_02 {left:3%; top:38%; width:487px;}
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_03 {width:332px;}
+
+}
+@media screen and (max-width: 820px) {
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_01 {width:35.4%; height:35%;}
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_02 {top:42%; width:52.9%; height:48.5%;}
+	.summer20_mv_wrap .main_summer20_inner .summer20_set.set_03 {width:39.9%; height:42.6%;}
+}
+
+/* ëª¨ë°”ì¼ */
+@media screen and (max-width: 640px) {
+    .summer20_mv_wrap {height: 1398px; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_bev_bg.jpg');}
+    .summer20_mv_wrap .main_summer20_inner {height: 1398px;}
+    
+    /* slogan */
+    .summer20_mv_wrap .main_summer20_inner .summer20_slogan {top: 4.2%; left: 7.4%; width: 56%; height: 11%; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_emblem.png');}
+    .summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan {top: 91%; left: 0; right: 0; width: 230px; height: 68px; margin: 0 auto;}
+    .summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan a {font-size: 24px; line-height: 68px;}
+
+    /* set 01 */
+    .summer20_mv_wrap .main_summer20_inner .summer20_set.set_01 {top: 21.4%; left:11.8%; width: 58.3%; height: 28.6%; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_bev1_cup.png');}
+    .summer20_mv_wrap .main_summer20_inner .summer20_set.set_01 a {top: 22%; left: 0; width: 50%; height: 76%;}
+
+    /* set 02 */
+    .summer20_mv_wrap .main_summer20_inner .summer20_set.set_02 {top: 31%; left: auto; left: initial; right:0; width: 51%; height: 36.4%; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_bev2_cup.png'); z-index:3;}/*20200409 ìˆ˜ì •*/
+    .summer20_mv_wrap .main_summer20_inner .summer20_set.set_02 a {top: 23%; left: 18%; width: 72%; height: 74%;}
+
+    /* set 03 */
+    .summer20_mv_wrap .main_summer20_inner .summer20_set.set_03 {top: 62.7%; left: 8%; width: 66.6%; height: 24.6%; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_bev3_cup.png');}
+    .summer20_mv_wrap .main_summer20_inner .summer20_set.set_03 a {top: 0; left: 13%; width: 45%; height: 101%;}
+}
+
+@media screen and (max-width: 585px) {
+	.summer20_mv_wrap,
+	.summer20_mv_wrap .main_summer20_inner {height: 1278px;}
+}
+@media screen and (max-width: 500px) {
+	.summer20_mv_wrap,
+	.summer20_mv_wrap .main_summer20_inner {height: 1086px;}
+	
+    .summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan {width: 120px; height: 38px;}
+    .summer20_mv_wrap .main_summer20_inner .btn_summer20_slogan a {font-size: 15px; line-height: 35px;}
+}
+@media screen and (max-width: 480px) {
+    .summer20_mv_wrap, .summer20_mv_wrap .main_summer20_inner {height: 1046px;}
+}
+@media screen and (max-width: 414px) {
+    .summer20_mv_wrap, .summer20_mv_wrap .main_summer20_inner {height: 905px;}
+}
+@media screen and (max-width: 375px) {
+    .summer20_mv_wrap, .summer20_mv_wrap .main_summer20_inner {height: 816px;}
+}
+@media screen and (max-width: 360px) {
+    .summer20_mv_wrap, .summer20_mv_wrap .main_summer20_inner {height: 786px;}
+}
+@media screen and (max-width: 320px) {
+	.summer20_mv_wrap, .summer20_mv_wrap .main_summer20_inner {height: 697px;}
+}
+/***************************************************************** s::20200407 main_visual **************************************************************/
+/********************************************************************************************************************************************************/
+
+/***************************************************************** s! 20200331 main_reserve *************************************************************/
+/********************************************************************************************************************************************************/
+#blackReserveWrap_nw {margin-top:-1px; background: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_reserve_bg.jpg') no-repeat 50% 50%; background-color:#ffffff; background-size: cover;}
+
+.wrap_inner.summer_20_reserve {position: relative; top: 0; left: 0; max-width: 1330px; width: 100%; height: 100%; margin: 0 auto;}
+.wrap_inner.summer_20_reserve .res_left_area {position: absolute; top: 25%; left: 8px; z-index:5;}
+.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {width:689px; height:141px; background: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_reserve_txt.png') no-repeat 50% 50%; background-size: 100%;}
+.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area img {width: 100%;}
+.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 {width: 126px; height: 38px; margin:0 0 0 160px;}
+.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 a {display: block; width: 100%; height: 100%; border: 2px solid #231916; border-radius: 4px; font-size: 14px; color: #231916; text-align: center; line-height: 34px; box-sizing: border-box; transition: background-color .7s, color .7s; -webkit-transition: background-color .7s, color .7s;}
+.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 a:hover {background: #231916; color: #ffffff;}
+
+.wrap_inner.summer_20_reserve .res_bean_17spring2 {position: absolute; top: 0; right: 0; width: 608px; height: 400px; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_reserve_bean.png'); background-size:cover; background-position:50% 50%; background-repeat:no-repeat; z-index:1;}
+
+@media screen and (max-width: 1300px){
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {width:600px;}
+	.wrap_inner.summer_20_reserve .res_bean_17spring2 {background-position: 0 24px; right:-8%;}
+	.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 {margin: 0 0 0 141px;}
+}
+
+@media screen and (min-width:641px) and (max-width:960px) {
+	#blackReserveWrap_nw {height:400px;}
+}
+
+@media screen and (max-width: 960px){
+	#blackReserveWrap_nw {height:1290px; background: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_reserve_bg.jpg') no-repeat 0 56%; background-size: cover; background-color: #ffffff;}
+	.wrap_inner.summer_20_reserve .res_bean_17spring2 {display:none;}
+	
+	.wrap_inner.summer_20_reserve .res_left_area,
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {height:1290px;}
+	.wrap_inner.summer_20_reserve .res_left_area {position: relative; left: inherit; top: inherit; margin: 0 auto;}
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {width:100%; left: inherit; top: inherit; margin: 0 auto; background: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_reserve_txt.png') no-repeat 50% 50%; background-size: 70%; background-position: top center;}
+
+	.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 {position: absolute; left: 0; right: 0; bottom: 5%; width: 230px; height: 67px; margin: 0 auto;}
+	.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 a {display: block; width: 100%; height: 100%; border: 2px solid #231916; border-radius: 4px; font-size: 22px; color: #231916; text-align: center; line-height: 63px; box-sizing: border-box; transition: background-color .7s, color .7s; -webkit-transition: background-color .7s, color .7s;}
+}
+
+@media screen and (max-width: 769px){
+	#blackReserveWrap_nw,
+	.wrap_inner.summer_20_reserve .res_left_area,
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {height:1174px;}
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {background-size: 80%;}
+}
+
+
+@media screen and (max-width: 640px){
+	#blackReserveWrap_nw,
+	.wrap_inner.summer_20_reserve .res_left_area,
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {height:1174px;}
+	
+	#blackReserveWrap_nw {background-position: 50% 50%;}
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {background-size:100%;}
+	.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 {bottom:8%;}
+}
+
+@media screen and (max-width: 589px){
+	#blackReserveWrap_nw,
+	.wrap_inner.summer_20_reserve .res_left_area,
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {height:1050px;}
+}
+
+@media screen and (max-width: 500px){
+	#blackReserveWrap_nw,
+	.wrap_inner.summer_20_reserve .res_left_area,
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {height:920px;}
+	
+	.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 {width: 125px; height: 38px;}
+	.wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 a {font-size: 15px;line-height: 34px;}
+}
+
+@media screen and (max-width: 430px){
+	#blackReserveWrap_nw,
+	.wrap_inner.summer_20_reserve .res_left_area,
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {height:732px;}
+}
+
+@media screen and (max-width: 375px){
+	#blackReserveWrap_nw,
+	.wrap_inner.summer_20_reserve .res_left_area,
+	.wrap_inner.summer_20_reserve .res_left_area .black_reserve_txt_area {height:676px;}
+}
+
+@media screen and (max-width: 360px){
+   .wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 {bottom: 9%;}
+}
+
+@media screen and (max-width: 320px){
+	#blackReserveWrap_nw {height:590px;}
+   .wrap_inner.summer_20_reserve .res_left_area .black_btn_sum19 {bottom: 19%;}
+}
+/***************************************************************** e! 20200331 main_reserve *************************************************************/
+/********************************************************************************************************************************************************/
+
+/***************************************************************** s::20200406 main_floating ************************************************************/
+/********************************************************************************************************************************************************/ 
+.layer_floating {position: fixed; width: 140px; height: 240px; left: 54.5%; top: 138px; margin-left: 515px; background: url('//image.istarbucks.co.kr/upload/common/img/main/2020/badge_main_summer.png') no-repeat; background-size: 100% auto; /*overflow: hidden;*/ text-indent: -20000px; z-index: 999;}
+.layer_floating a {display:block; height: 100%; width:100%; box-sizing: border-box;}
+	
+	@media all and (max-width: 1400px) {
+		.layer_floating {left:auto; left:initial; right:1%; margin-left:0;}
+	}
+	
+	@media all and (max-width: 960px) {
+		.layer_floating {top:85px;}
+	}
+	
+	@media all and (max-width: 640px) {
+		.layer_floating {top:92px; width: 25.7%; height: 160px; padding-bottom:24%; right:1.8%; background: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_badge_main_summer.png') no-repeat; background-size:100% auto;}
+	}
+	
+	@media all and (max-width: 500px) {
+		.layer_floating {top:82px;}
+	}
+	
+	@media all and (max-width: 414px) {
+		.layer_floating {top:80px; padding-bottom:12%;}
+	}
+	
+	@media all and (max-width: 375px) {
+		.layer_floating {padding-bottom:5%;}
+	}
+	
+	@media all and (max-width: 320px) {
+		.layer_floating {padding-bottom:0;}
+	}
+/***************************************************************** e::20200406 main_floating ************************************************************/
+/********************************************************************************************************************************************************/
+
+/***************************************************************** s:: 20200407 main_Bean ***************************************************************/
+/********************************************************************************************************************************************************/
+#summer20_beanWrap {position:relative; width:100%; height:573px; background: 0 50% no-repeat; background-size: cover; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_coffee_bg.jpg'); background-color: #d0e8f8;}
+#summer20_beanWrap .bean_wrap_inner {position: relative; max-width: 1200px; width: 100%; height: 573px; margin: 0 auto;}
+#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap {position:relative; width:100%; height:100%;}
+#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap:after {content: ''; clear: both; display:block;}
+#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .summer20_bean {float:left; width:210px; height:439px; /* opacity: 0; */ position:absolute; left:17%; top:74px; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bean.png'); background-repeat: no-repeat; background-size:100%;}
+#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right {position:relative; float:right; /* opacity: 0; */ width:339px; height:128px; position:absolute; right:17%; top:176px;}
+#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right dl.summer20_bean_txt {width:100%; height:100%; transition-duration: width .5s; -webkit-transition-duration: width .5s; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_bean_tit.png'); background-repeat: no-repeat; background-size:100%;}
+
+#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right .btn_summer20_bean {margin:50px 2px 0 0; border: 2px solid #000000; border-radius: 3px; height: 34px; width: 121px; z-index: 6;}
+#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right .btn_summer20_bean a {color: #000000; display: block; font-size: 14px; height: 100%; line-height: 34px; text-align: center; width: 100%; transition: background-color .7s, color .7s; -webkit-transition: background-color .7s, color .7s;}
+#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right .btn_summer20_bean a:hover {background: #000000; color: #ffffff;}
+
+
+@media all and (min-width: 961px) and (max-width: 1200px) {
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .summer20_bean {margin-left:5%;}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right {top:181px; width:28.3%; height:24.6%;}
+}
+
+@media all and (max-width: 960px) {
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right {margin-right:-10%;}
+}
+
+@media all and (max-width: 768px) {
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .summer20_bean {margin-left:-10%;}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right {margin-right:-16%;}
+}
+
+@media all and (max-width: 640px) {
+	#summer20_beanWrap {height:1059px; background: 0 50% no-repeat; background-size: cover; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_coffee_bg.jpg');}
+	#summer20_beanWrap .bean_wrap_inner {height:1059px; max-width:640px; margin:0 auto; box-sizing: border-box;}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap {box-sizing: border-box;}
+	
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .summer20_bean,
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right {float:none; width:100%; margin:0; height:auto; text-align:center; position:relative; left:0}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right {right:auto; right:initial; top:auto; top: initial; bottom:-3%; position:relative;}
+	
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .summer20_bean {top:0; width:100%; height:58%; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_bean.png');}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right dl.summer20_bean_txt {width:100%; height:163px; background-image: url('//image.istarbucks.co.kr/upload/common/img/main/2020/m_20_summer_bean_tit.png');}
+
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right .btn_summer20_bean {width: 230px; height: 60px; margin:12% auto 0 auto; border: 2px solid #000000;}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right .btn_summer20_bean a {color:#000000; font-size:20px; height:100%; line-height:55px;}
+}
+
+@media all and (max-width: 585px) {
+	#summer20_beanWrap,
+	#summer20_beanWrap .bean_wrap_inner {height:940px;}
+}
+
+@media all and (max-width: 501px) {
+	#summer20_beanWrap,
+	#summer20_beanWrap .bean_wrap_inner {height:840px;}
+	
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right .btn_summer20_bean {top:0; width: 121px; height: 34px; margin:-7px auto 0 auto;}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right .btn_summer20_bean a {height: 34px; line-height: 34px; font-size: 15px;}
+}
+
+@media all and (max-width: 430px) {
+	#summer20_beanWrap,
+	#summer20_beanWrap .bean_wrap_inner {height:690px;}
+	
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .summer20_bean {height:60%;}
+	
+}
+
+@media all and (max-width: 414px) {
+	#summer20_beanWrap,
+	#summer20_beanWrap .bean_wrap_inner {height:660px;}
+}
+
+@media all and (max-width: 380px) {
+	#summer20_beanWrap,
+	#summer20_beanWrap .bean_wrap_inner {height:625px;}
+}
+
+@media all and (max-width: 375px) {
+	#summer20_beanWrap,
+	#summer20_beanWrap .bean_wrap_inner {height:610px;}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .summer20_bean {height:58%;}
+	#summer20_beanWrap .bean_wrap_inner .summer20_bean_wrap .bean_right .btn_summer20_bean {margin:-30px auto 0 auto;}
+}
+
+@media all and (max-width: 320px) {
+	#summer20_beanWrap,
+	#summer20_beanWrap .bean_wrap_inner {height:550px;}
+}
+/***************************************************************** e:: 20200407 main_Bean ************************************************************************/
+/********************************************************************************************************************************************************/	
+
+/*20200407 main_favorite ìˆ˜ì •*/
+.summer_17_fav_img.summer20Fav {background: url('//image.istarbucks.co.kr/upload/common/img/main/2020/20_summer_fav.png') no-repeat; background-size: 100% auto;}
+
+
+
